@@ -36,4 +36,13 @@ public class ClienteController {
     public Cliente excluirCliente(@PathVariable("id_clinte") Integer id_cliente){
         return clienteDao.excluirCliente(id_cliente);
     }
+
+    //??? devo por {id_cliente}???
+    @PostMapping("/nomeCl")
+    public String nomeCliente(@PathVariable("id_cliente") Integer id_cliente) {
+        return clienteDao.nomeCliente(id_cliente);
+    }
+
+
+
 }

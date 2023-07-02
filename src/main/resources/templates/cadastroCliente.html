@@ -58,8 +58,8 @@
                 <td th:text="${cl.data_aniversario}"></td>
                 <td th:text="${cl.data_cadastro}"></td>
                 <td>
-                    <!--??? fazer método a parte para carregar id e nome do cliente em agenda???-->
-                   <!-- <a class="btn btn-primary" th:href="@{/agenda}" role="button">Agendar</a>&nbsp -->
+                    <!--??? é esse o  método a parte para carregar id e nome do cliente em agenda???-->
+                    <a class="btn btn-primary" th:href="@{/agenda}" th:value="${cl.id_cliente}" role="button">Agendar</a>&nbsp
                     <a class="btn btn-warning" th:href="@{/cliente/AtualizarCl/{id}(id=${cl.id_cliente})}" role="button">Atualizar</a>&nbsp
                     <a class="btn btn-danger" th:href="@{/cliente/excluirCl/{id}(id=${cl.id_cliente})}" role="button">Excluir</a>&nbsp
                 </td>

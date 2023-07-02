@@ -11,12 +11,8 @@
 <h2>Serviço - Atendimento</h2>
 
 <form action="#" th:action="@{/servico/cadastroSr}" th:object="${/servico}" method="post">
-
-  <p>
-    <!--??? nome vindo de cliente -->
-    <label>Nome:</label>
-    <input type="text" th:field="*{????}" ><br/>
-  </p>
+  <!--??? dentro de form ???-->
+  <p>Cliente agendado: <span th:text="${nomeCl}"></span></p>
   <p>
     <label >Serviço:</label>
     <input type="text" th:field="*{servico}"><br/>

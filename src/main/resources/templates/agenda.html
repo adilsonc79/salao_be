@@ -15,16 +15,9 @@
 
 <form action="#" th:action="@{/agenda/cadastroAg}" th:object="${agenda}" method="post">
 
+    <!--??? dentro de form ??? -->
+    <p>Cliente agendado: <span th:text="${nomeCl}"></span></p>
 
-    <p>
-        <label>Selecione Cliente:</label>
-    </p>
-    <p>
-        <select th:field="*{nome}">
-            <option th:each="cl : ${cliente}" th:value="${cl.nome}" th:text="${cl.nome}"></option>
-        </select>
-    </p>
-    <p>
     <p>
         <label>Servico:</label>
         <input type="text" th:field="*{servico}" ><br/>
